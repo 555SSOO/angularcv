@@ -1,1 +1,7 @@
-<p>projects works!</p>
+<div class="projects-wrapper">
+  <div class="row">
+    <div class="col-sm" *ngFor="let cvItem of projectsCvItems">
+      <app-material-card [title]="cvItem.headline" [subtitle]="cvItem.description"></app-material-card>
+    </div>
+  </div>
+</div>

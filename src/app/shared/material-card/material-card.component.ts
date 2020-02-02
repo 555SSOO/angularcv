@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-material-card',
@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./material-card.component.scss']
 })
 export class MaterialCardComponent implements OnInit {
+
+  @Input() title: string;
+  @Input() subtitle: string;
+  @Input() imageURI: string;
 
   constructor() { }
 

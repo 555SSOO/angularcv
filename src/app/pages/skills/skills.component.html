@@ -1,1 +1,7 @@
-<p>skills works!</p>
+<div class="skills-wrapper">
+  <div class="row">
+    <div class="col-sm" *ngFor="let cvItem of skillsCvItems">
+      <app-material-card [title]="cvItem.headline" [subtitle]="cvItem.description"></app-material-card>
+    </div>
+  </div>
+</div>

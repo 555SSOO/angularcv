@@ -1,7 +1,7 @@
 <div class="education-wrapper">
   <div class="row">
-    <div class="col-sm" *ngFor="let number of [0,1,2]">
-      <app-material-card></app-material-card>
+    <div class="col-sm" *ngFor="let cvItem of educationCvItems">
+      <app-material-card [title]="cvItem.headline" [subtitle]="cvItem.description" [imageURI]="cvItem.imageURI"></app-material-card>
     </div>
   </div>
 </div>
