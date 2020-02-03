@@ -4,13 +4,15 @@ import { HeaderComponent } from './header/header.component';
 import {RouterModule} from '@angular/router';
 import {MatButtonModule, MatCardModule, MatTabsModule, MatToolbarModule} from '@angular/material';
 import { MaterialCardComponent } from './material-card/material-card.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
 @NgModule({
-  declarations: [HeaderComponent, MaterialCardComponent],
+  declarations: [HeaderComponent, MaterialCardComponent, FooterComponent],
   exports: [
     HeaderComponent,
+    FooterComponent,
     MaterialCardComponent
   ],
   imports: [
