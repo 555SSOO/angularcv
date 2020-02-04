@@ -7,6 +7,8 @@ import {PagesModule} from './pages/pages.module';
 import {SharedModule} from './shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {MatButtonModule, MatSidenavModule} from '@angular/material';
+import {FlexModule} from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,10 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     PagesModule,
     SharedModule,
     BrowserAnimationsModule,
-    NgbModule
+    NgbModule,
+    MatSidenavModule,
+    FlexModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

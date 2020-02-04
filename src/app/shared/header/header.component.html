@@ -1,22 +1,16 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row class="center-content">
-    <span class="site-title">Srdjan Obradovic</span>
+    <span class="site-title">Srđan Obradović</span>
   </mat-toolbar-row>
 
-  <mat-toolbar-row class="center-content">
+  <mat-toolbar-row class="center-content" fxShow="true" fxHide.lt-md="true">
     <a routerLink="/experience" routerLinkActive="active" class="header-link">Experience</a>
     <a routerLink="/education" routerLinkActive="active" class="header-link">Education</a>
     <a routerLink="/skills" routerLinkActive="active" class="header-link">Skills</a>
     <a routerLink="/projects" routerLinkActive="active" class="header-link">Projects</a>
     <a routerLink="/hobbies" routerLinkActive="active" class="header-link">Hobbies</a>
   </mat-toolbar-row>
-
+  <mat-toolbar-row fxShow="true" fxHide.gt-sm="true">
+      <a (click)="toggleSidenav()" class="header-link">Menu</a>
+  </mat-toolbar-row>
 </mat-toolbar>
-<!--<mat-tab-group mat-align-tabs="center">-->
-<!--  <mat-tab label="Experience" routerLink="/experience"></mat-tab>-->
-<!--  <mat-tab label="Education" routerLink="/education"></mat-tab>-->
-<!--  <mat-tab label="Skills" routerLink="/skills"></mat-tab>-->
-<!--  <mat-tab label="Projects" routerLink="/projects"></mat-tab>-->
-<!--  <mat-tab label="Hobbies" routerLink="/hobbies"></mat-tab>-->
-<!---->
-<!--</mat-tab-group>-->

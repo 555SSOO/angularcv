@@ -1,5 +1,24 @@
-<app-header></app-header>
-<div class="container-fluid">
-  <router-outlet></router-outlet>
-</div>
-<app-footer></app-footer>
+<app-header (toggleSidenavEmitter)="toggleSidebar()"></app-header>
+
+<mat-sidenav-container fxFlexFill>
+  <mat-sidenav #sidenav fxLayout="column">
+    <div fxLayout="column">
+      <a (click)="sidenav.toggle()" mat-button>Close</a>
+      <a routerLink="/experience" routerLinkActive="active" mat-button>Experience</a>
+      <a routerLink="/education" routerLinkActive="active" mat-button>Education</a>
+      <a routerLink="/skills" routerLinkActive="active" mat-button>Skills</a>
+      <a routerLink="/projects" routerLinkActive="active" mat-button>Projects</a>
+      <a routerLink="/hobbies" routerLinkActive="active" mat-button>Hobbies</a>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content fxFlexFill>
+
+    <div class="container-fluid">
+      <router-outlet></router-outlet>
+    </div>
+    <app-footer></app-footer>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+

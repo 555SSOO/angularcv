@@ -2,9 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import {RouterModule} from '@angular/router';
-import {MatButtonModule, MatCardModule, MatTabsModule, MatToolbarModule} from '@angular/material';
+import {MatButtonModule, MatCardModule, MatSidenavModule, MatTabsModule, MatToolbarModule} from '@angular/material';
 import { MaterialCardComponent } from './material-card/material-card.component';
 import { FooterComponent } from './footer/footer.component';
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 
 
@@ -21,7 +22,9 @@ import { FooterComponent } from './footer/footer.component';
     MatToolbarModule,
     MatTabsModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    FlexLayoutModule,
+    MatSidenavModule
   ]
 })
 export class SharedModule { }

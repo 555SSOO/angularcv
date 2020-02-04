@@ -8,7 +8,11 @@ import {Component, Input, OnInit} from '@angular/core';
 export class MaterialCardComponent implements OnInit {
 
   @Input() title: string;
-  @Input() subtitle: string;
+  @Input() subtitleLine1: string;
+  @Input() subtitleLine2: string;
+  @Input() detailedDescription: string;
+  @Input() buttonUrl: string;
+  @Input() buttonText: string;
   @Input() imageURI: string;
 
   constructor() { }

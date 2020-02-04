@@ -6,7 +6,10 @@ export class EducationItems {
     return {
       id: 1,
       headline: 'The Faculty of Computer Science',
-      description: 'Bachelor degree in Electrical engineering and computing 2016 - present',
+      description: 'Bachelor degree in Electrical engineering and computing',
+      subtitleLine1: '2016 - present',
+      linkUrl: 'https://raf.edu.rs/',
+      linkText: 'VISIT RAF.EDU',
       imageURI: 'assets/img/RacunarskiFakultet.png'};
   }
   public static get CV_EDUCATION_ITEM_2(): CvItem {
@@ -14,6 +17,8 @@ export class EducationItems {
       id: 2,
       headline: 'VIII Belgrade gymnasium',
       description: 'Mathematical and natural science',
+      linkUrl: 'http://www.osmagimnazija.edu.rs/',
+      linkText: 'VISIT OSMAGIMNAZIJA.EDU',
       imageURI: 'assets/img/OsmaBeogradskaGimnazija.jpeg'};
   }
   public static get CV_EDUCATION_ITEMS(): Array<CvItem> {

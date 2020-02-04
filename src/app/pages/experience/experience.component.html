@@ -1,7 +1,13 @@
 <div class="experience-wrapper">
   <div class="row">
-    <div class="col-sm" *ngFor="let cvItem of experienceCvItems">
-      <app-material-card [title]="cvItem.headline" [subtitle]="cvItem.description"></app-material-card>
+    <div class="col-sm test" *ngFor="let cvItem of experienceCvItems">
+      <app-material-card [title]="cvItem.headline"
+                         [subtitleLine1]="cvItem.subtitleLine1"
+                         [subtitleLine2]="cvItem.subtitleLine2"
+                         [detailedDescription]="cvItem.description"
+                         [buttonUrl]="cvItem.linkUrl"
+                         [buttonText]="cvItem.linkText"
+                         [imageURI]="cvItem.imageURI"></app-material-card>
     </div>
   </div>
 </div>
