@@ -17,6 +17,7 @@ export class EducationItems {
       id: 2,
       headline: 'VIII Belgrade gymnasium',
       description: 'Mathematical and natural science',
+      subtitleLine1: 'Four year high school',
       linkUrl: 'http://www.osmagimnazija.edu.rs/',
       linkText: 'VISIT OSMAGIMNAZIJA.EDU',
       imageURI: 'assets/img/OsmaBeogradskaGimnazija.png'};

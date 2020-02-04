@@ -10,7 +10,7 @@ export class ExperienceItems {
       subtitleLine1: '12/2018 - present',
       linkUrl: 'https://www.msgnetconomy.net/',
       linkText: 'VISIT msgNETCONOMY WEBSITE',
-      imageURI: 'assets/img/msgNC.jpg'
+      imageURI: 'assets/img/msgNC.png'
     };
   }
   public static get CV_EXPERIENCE_ITEM_2(): CvItem {
