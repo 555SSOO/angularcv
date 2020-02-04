@@ -1,6 +1,6 @@
 <app-header (toggleSidenavEmitter)="toggleSidebar()"></app-header>
 
-<mat-sidenav-container fxFlexFill>
+<mat-sidenav-container  class="sidenav-container">
   <mat-sidenav #sidenav fxLayout="column">
     <div fxLayout="column">
       <a (click)="sidenav.toggle()" mat-button>Close</a>

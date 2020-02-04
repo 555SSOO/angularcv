@@ -11,7 +11,7 @@ export class ProjectsItems {
         ' a website and an Android application for customer and waiter access.' +
         ' The main design point was that customers could order their drinks' +
         ' or food without having to hail the waiting staff.',
-      imageURI: 'assets/img/CafeSociety.jpg'
+      imageURI: 'assets/img/CafeSociety.png'
     };
   }
   public static get CV_PROJECTS_ITEM_2(): CvItem {

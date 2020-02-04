@@ -19,7 +19,7 @@ export class EducationItems {
       description: 'Mathematical and natural science',
       linkUrl: 'http://www.osmagimnazija.edu.rs/',
       linkText: 'VISIT OSMAGIMNAZIJA.EDU',
-      imageURI: 'assets/img/OsmaBeogradskaGimnazija.jpeg'};
+      imageURI: 'assets/img/OsmaBeogradskaGimnazija.png'};
   }
   public static get CV_EDUCATION_ITEMS(): Array<CvItem> {
     return [this.CV_EDUCATION_ITEM_1, this.CV_EDUCATION_ITEM_2];

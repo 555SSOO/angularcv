@@ -21,7 +21,7 @@ export class ExperienceItems {
       subtitleLine1: '08/2018 - 12/2018',
       linkUrl: 'https://www.msgnetconomy.net/',
       linkText: 'VISIT msgNETCONOMY WEBSITE',
-      imageURI: 'assets/img/msgNCInternship.jpg'
+      imageURI: 'assets/img/msgNCInternship.png'
       };
   }
   public static get CV_EXPERIENCE_ITEM_3(): CvItem {
@@ -32,7 +32,7 @@ export class ExperienceItems {
       subtitleLine1: '04/2018 - 08/2018',
       linkUrl: 'https://netcast.rs/en/',
       linkText: 'VISIT NetCast WEBSITE',
-      imageURI: 'assets/img/netcast.jpg'
+      imageURI: 'assets/img/NetCast.png'
     };
   }
 

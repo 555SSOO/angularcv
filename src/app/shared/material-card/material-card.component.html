@@ -7,7 +7,7 @@
   </mat-card-header>
 
   <div *ngIf="imageURI; then cardImage else defaultImage"></div>
-  <ng-template #cardImage>
+  <ng-template #cardImage >
     <img mat-card-image src="{{imageURI}}" alt="image">
   </ng-template>
   <ng-template #defaultImage>
