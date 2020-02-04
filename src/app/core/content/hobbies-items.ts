@@ -7,7 +7,7 @@ export class HobbiesItems {
       id: 1,
       headline: 'Running',
       description: 'Love for running, especially in nature',
-      imageURI: 'assets/img/Running.jpeg'
+      imageURI: 'assets/img/Running.png'
     };
   }
   public static get CV_HOBBIES_ITEM_2(): CvItem {
@@ -15,7 +15,7 @@ export class HobbiesItems {
       id: 2,
       headline: 'Video games',
       description: 'Passionate about video games since childhood',
-      imageURI: 'assets/img/videoGames.jpg'
+      imageURI: 'assets/img/VideoGames.png'
     };
   }
   public static get CV_HOBBIES_ITEMS(): Array<CvItem> {

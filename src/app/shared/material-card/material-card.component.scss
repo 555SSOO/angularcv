@@ -1,7 +1,14 @@
 .cv-item-card{
   margin: 25px 0 25px 0;
+  height: 95%;
+  &__button{
+    position: absolute;
+    bottom: 13px;
+  }
 }
+
 a {
   color: inherit;
   cursor: pointer;
 }
+
