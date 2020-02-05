@@ -1,8 +1,8 @@
 <div class="skills-wrapper">
-  <mat-grid-list cols="3">
+  <mat-grid-list cols="{{numberOfColumns}}" rowHeight="{{rowHeight}}">
     <mat-grid-tile
       *ngFor="let cvItem of skillsCvItems">
-      <mat-list>
+      <mat-list class="w-100">
       <mat-list-item>
         <img matListAvatar src="{{cvItem.imageURI}}" alt=""><br>
         <h3 matLine> {{cvItem.headline}} </h3>

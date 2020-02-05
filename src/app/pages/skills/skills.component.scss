@@ -3,10 +3,10 @@
 @import "../../../../node_modules/bootstrap/scss/variables";
 
 .skills-wrapper{
-  @include media-breakpoint-up(lg){
+  @include media-breakpoint-up(xl){
     width: 70%;
     position: absolute;
-    left: 0;
+    left: 12%;
     right: 0;
     margin: auto;
   }
