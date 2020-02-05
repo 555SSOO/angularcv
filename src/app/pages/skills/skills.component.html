@@ -1,11 +1,16 @@
 <div class="skills-wrapper">
-  <mat-list>
-    <mat-list-item *ngFor="let cvItem of skillsCvItems">
-      <img matListAvatar src="{{cvItem.imageURI}}" alt="">
-      <h3 matLine> {{cvItem.headline}} </h3>
-      <p matLine>
-        <span> {{cvItem.description}} </span>
-      </p>
-    </mat-list-item>
-  </mat-list>
+  <mat-grid-list cols="3">
+    <mat-grid-tile
+      *ngFor="let cvItem of skillsCvItems">
+      <mat-list>
+      <mat-list-item>
+        <img matListAvatar src="{{cvItem.imageURI}}" alt=""><br>
+        <h3 matLine> {{cvItem.headline}} </h3>
+        <p matLine>
+          <span> {{cvItem.description}} </span>
+        </p>
+      </mat-list-item>
+      </mat-list>
+    </mat-grid-tile>
+  </mat-grid-list>
 </div>
