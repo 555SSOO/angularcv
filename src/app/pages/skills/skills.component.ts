@@ -19,6 +19,10 @@ export class SkillsComponent implements OnInit {
     this.skillsCvItems = SkillsItems.CV_SKILLS_ITEMS;
     this.numberOfColumns = 2;
     this.rowHeight = '200px';
+    if (window.screen.width < 400) {
+      this.numberOfColumns = 1;
+      this.rowHeight = '100px';
+    }
   }
 
   @HostListener('window:resize', ['$event'])
