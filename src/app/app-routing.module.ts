@@ -10,7 +10,7 @@ import {EducationComponent} from './pages/education/education.component';
 
 const routes: Routes = [
   {
-  path: 'home',
+  path: '',
   component: HomepageComponent
   },
   {

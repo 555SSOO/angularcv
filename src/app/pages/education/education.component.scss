@@ -1,3 +1,13 @@
-.sidenav-container{
-  height: 70%;
+@import "../../../../node_modules/bootstrap/scss/mixins";
+@import "../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../node_modules/bootstrap/scss/variables";
+
+.education-wrapper{
+  @include media-breakpoint-up(lg){
+    width: 70%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
 }
