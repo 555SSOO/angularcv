@@ -3,34 +3,23 @@
 @import "../../../../node_modules/bootstrap/scss/variables";
 
 .skills-wrapper{
-  @include media-breakpoint-up(lg){
+  @include media-breakpoint-up(lg) {
     width: 70%;
     position: absolute;
-    //left: 12%;
     right: 0;
     left: 0;
     margin: auto;
   }
-  &__item{
-    position: relative;
-    &-headline{
-      position: relative;
-      z-index: 1;
-    }
-    &-background{
-      position: absolute;
-      top: 30px;
-      left: 50px;
-      z-index: -1;
-      -moz-transform: scale(-1, 1);
-      -webkit-transform: scale(-1, 1);
-      -o-transform: scale(-1, 1);
-      -ms-transform: scale(-1, 1);
-      transform: scale(-1, 1);
-    }
+}
+
+.skills-item{
+  width: 70%;
+  @include media-breakpoint-down(sm) {
+    width: 90%;
   }
 }
 
-.example-margin {
-  margin: 0 10px;
+.skills-row{
+  margin:0;
+  top:50%;
 }

@@ -1,23 +1,15 @@
 <div class="skills-wrapper">
   <mat-grid-list cols="{{numberOfColumns}}" rowHeight="{{rowHeight}}">
     <mat-grid-tile *ngFor="let cvItem of skillsCvItems">
-
-
-      <div id="skills-wrapper__item">
-        <div class="skills-wrapper__item-headline">
-          <h3 matLine> {{cvItem.headline}} </h3></div>
-        <div>
-          <mat-progress-spinner
-            class="example-margin skills-wrapper__item-background"
-            [color]="color"
-            [mode]="mode"
-            [value]="value"
-            [diameter]="diameter">
-          </mat-progress-spinner>
-        </div>
+      <div class="skills-item">
+        <app-material-card [title]=""
+                           [subtitleLine1]="cvItem.subtitleLine1"
+                           [subtitleLine2]="cvItem.subtitleLine2"
+                           [detailedDescription]="cvItem.description"
+                           [buttonUrl]="cvItem.linkUrl"
+                           [buttonText]="cvItem.linkText"
+                           [imageURI]="cvItem.imageURI"></app-material-card>
       </div>
-
-
     </mat-grid-tile>
   </mat-grid-list>
 </div>

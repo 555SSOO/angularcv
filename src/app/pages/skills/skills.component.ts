@@ -14,32 +14,35 @@ export class SkillsComponent implements OnInit {
   numberOfColumns: number;
   rowHeight: string;
 
-  color: ThemePalette = 'accent';
-  mode: ProgressSpinnerMode = 'determinate';
-  value = 90;
-  diameter = 300;
-
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
     this.skillsCvItems = SkillsItems.CV_SKILLS_ITEMS;
-    this.numberOfColumns = 3;
-    this.rowHeight = '400px';
-    if (window.screen.width < 400) {
-      this.numberOfColumns = 1;
-      this.rowHeight = '100px';
-    }
+
+    this.resizeRowHeight(window.screen.width);
   }
 
   @HostListener('window:resize', ['$event'])
   onResize(event) {
-    if (event.target.innerWidth < 400) {
+    this.resizeRowHeight(event.target.innerWidth);
+  }
+
+  // https://github.com/angular/components/issues/10395
+  resizeRowHeight(width: number) {
+    this.numberOfColumns = 4;
+    if (width < 376) {
       this.numberOfColumns = 1;
-      this.rowHeight = '100px';
-    }
-    else {
-      this.numberOfColumns = 2;
-      this.rowHeight = '200px';
+      this.rowHeight = '420px';
+    } else if (width < 426) {
+      this.numberOfColumns = 1;
+      this.rowHeight = '460px';
+    } else if (width < 426) {
+      this.rowHeight = '350px';
+    } else if (width < 426) {
+      this.rowHeight = '350px';
+    } else {
+      this.rowHeight = '350px';
     }
   }
 

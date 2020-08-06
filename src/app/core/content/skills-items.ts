@@ -50,6 +50,22 @@ export class SkillsItems {
       imageURI: 'assets/img/icons/HybrisIcon.png'
     };
   }
+  public static get CV_SKILLS_ITEM_7(): CvItem {
+    return {
+      id: 7,
+      headline: 'SAP Commerce Cloud',
+      description: 'Creating e-commerce websites',
+      imageURI: 'assets/img/icons/HybrisIcon.png'
+    };
+  }
+  public static get CV_SKILLS_ITEM_8(): CvItem {
+    return {
+      id: 8,
+      headline: 'SAP Commerce Cloud',
+      description: 'Creating e-commerce websites',
+      imageURI: 'assets/img/icons/HybrisIcon.png'
+    };
+  }
 
   public static get CV_SKILLS_ITEMS(): Array<CvItem> {
     return [this.CV_SKILLS_ITEM_1,
@@ -57,7 +73,10 @@ export class SkillsItems {
             this.CV_SKILLS_ITEM_3,
             this.CV_SKILLS_ITEM_4,
             this.CV_SKILLS_ITEM_5,
-            this.CV_SKILLS_ITEM_6];
+            this.CV_SKILLS_ITEM_6,
+            this.CV_SKILLS_ITEM_7,
+            this.CV_SKILLS_ITEM_8
+    ];
   }
 
 }
