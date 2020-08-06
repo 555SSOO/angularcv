@@ -1,16 +1,23 @@
 <div class="skills-wrapper">
   <mat-grid-list cols="{{numberOfColumns}}" rowHeight="{{rowHeight}}">
-    <mat-grid-tile
-      *ngFor="let cvItem of skillsCvItems">
-      <mat-list class="w-100">
-      <mat-list-item>
-        <img matListAvatar src="{{cvItem.imageURI}}" alt=""><br>
-        <h3 matLine> {{cvItem.headline}} </h3>
-        <p matLine>
-          <span> {{cvItem.description}} </span>
-        </p>
-      </mat-list-item>
-      </mat-list>
+    <mat-grid-tile *ngFor="let cvItem of skillsCvItems">
+
+
+      <div id="skills-wrapper__item">
+        <div class="skills-wrapper__item-headline">
+          <h3 matLine> {{cvItem.headline}} </h3></div>
+        <div>
+          <mat-progress-spinner
+            class="example-margin skills-wrapper__item-background"
+            [color]="color"
+            [mode]="mode"
+            [value]="value"
+            [diameter]="diameter">
+          </mat-progress-spinner>
+        </div>
+      </div>
+
+
     </mat-grid-tile>
   </mat-grid-list>
 </div>

@@ -3,12 +3,13 @@
 @import "../../../../node_modules/bootstrap/scss/variables";
 
 .homepage-wrapper {
-  @include media-breakpoint-up(lg) {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-  }
+  background-color: #181818;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
 }
 
 .homepage__profile-picture {
@@ -16,5 +17,9 @@
     height: 300px;
   }
   height: 200px;
+}
+
+.homepage__bio{
+  color: white;
 }
 
