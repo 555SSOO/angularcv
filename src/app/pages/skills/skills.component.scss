@@ -2,24 +2,26 @@
 @import "../../../../node_modules/bootstrap/scss/functions";
 @import "../../../../node_modules/bootstrap/scss/variables";
 
-.skills-wrapper{
+.skills-wrapper {
+
   @include media-breakpoint-up(lg) {
     width: 70%;
+  }
+  @media (min-width: 426px){
     position: absolute;
     right: 0;
     left: 0;
     margin: auto;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
   }
 }
 
-.skills-item{
+.skills-item {
   width: 70%;
   @include media-breakpoint-down(sm) {
     width: 90%;
   }
-}
-
-.skills-row{
-  margin:0;
-  top:50%;
 }
