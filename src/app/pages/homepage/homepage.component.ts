@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {BioItem} from '../../core/models/bio-item.model';
 import {BiographyItem} from '../../core/content/biography-item';
 
@@ -10,11 +10,18 @@ import {BiographyItem} from '../../core/content/biography-item';
 export class HomepageComponent implements OnInit {
 
   biography: BioItem;
+  bioPic: string;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
     this.biography = BiographyItem.BIOGRAPHY_ITEM;
+    if (window.screen.width < 960) {
+      this.bioPic = this.biography.smallPictureURI;
+    } else {
+      this.bioPic = this.biography.bigPictureURI;
+    }
   }
 
 }

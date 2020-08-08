@@ -1,5 +1,6 @@
 export interface BioItem {
   id: number;
-  pictureURI: string;
+  bigPictureURI: string;
+  smallPictureURI: string;
   bio: string;
 }
