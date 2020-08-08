@@ -1,19 +1,19 @@
 <mat-card class="cv-item-card">
-  <mat-card-header>
-<!--    <div mat-card-avatar class="example-header-image"></div>-->
+  <mat-card-header [className]="title || subtitleLine1 || subtitleLine2 ? '' : 'd-none'">
+    <!--    <div mat-card-avatar class="example-header-image"></div>-->
     <mat-card-title>{{title}}</mat-card-title>
     <mat-card-subtitle>{{subtitleLine1}}</mat-card-subtitle>
     <mat-card-subtitle>{{subtitleLine2}}</mat-card-subtitle>
   </mat-card-header>
 
-  <div *ngIf="imageURI; then cardImage else defaultImage"></div>
-  <ng-template #cardImage >
+  <div *ngIf="imageURI; then cardImage else defaultImage"
+  ></div>
+  <ng-template #cardImage>
     <img mat-card-image src="{{imageURI}}" alt="image">
   </ng-template>
   <ng-template #defaultImage>
     <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
   </ng-template>
-
 
   <mat-card-content *ngIf="detailedDescription">
     <p>
@@ -21,10 +21,10 @@
     </p>
   </mat-card-content>
 
-
   <mat-card-actions *ngIf="buttonUrl" class="cv-item-card__button">
-    <a href="{{buttonUrl}}" target="_blank"><button mat-button>{{buttonText}}</button></a>
+    <a href="{{buttonUrl}}" target="_blank">
+      <button mat-button>{{buttonText}}</button>
+    </a>
   </mat-card-actions>
-
 
 </mat-card>
