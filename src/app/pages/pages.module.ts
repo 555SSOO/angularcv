@@ -6,10 +6,10 @@ import { SkillsComponent } from './skills/skills.component';
 import { HobbiesComponent } from './hobbies/hobbies.component';
 import { EducationComponent } from './education/education.component';
 import { ProjectsComponent } from './projects/projects.component';
+import {VideoCloneComponent} from './video-clone/video-clone.component';
 import {SharedModule} from '../shared/shared.module';
 import {MatGridListModule, MatListModule, MatProgressSpinnerModule} from '@angular/material';
-
-
+import {WebcamModule} from 'ngx-webcam'
 
 @NgModule({
   declarations: [
@@ -18,14 +18,16 @@ import {MatGridListModule, MatListModule, MatProgressSpinnerModule} from '@angul
     SkillsComponent,
     HobbiesComponent,
     EducationComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    VideoCloneComponent
   ],
-    imports: [
-        CommonModule,
-        SharedModule,
-        MatGridListModule,
-        MatListModule,
-        MatProgressSpinnerModule
-    ]
+  imports: [
+    CommonModule,
+    SharedModule,
+    MatGridListModule,
+    MatListModule,
+    MatProgressSpinnerModule,
+    WebcamModule
+  ]
 })
 export class PagesModule { }

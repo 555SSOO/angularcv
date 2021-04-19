@@ -1,0 +1,9 @@
+<!--<button (click)="runInference()">Infer</button>-->
+<label class="image-upload-container btn btn-bwm">
+  <span>Select Image</span>
+  <input #imageInput
+         type="file"
+         accept="image/*"
+         (change)="runInference(imageInput)">
+</label>
+<webcam></webcam>

@@ -6,7 +6,7 @@ import {ProjectsComponent} from './pages/projects/projects.component';
 import {SkillsComponent} from './pages/skills/skills.component';
 import {HobbiesComponent} from './pages/hobbies/hobbies.component';
 import {EducationComponent} from './pages/education/education.component';
-
+import {VideoCloneComponent} from './pages/video-clone/video-clone.component';
 
 const routes: Routes = [
   {
@@ -32,7 +32,11 @@ const routes: Routes = [
   {
     path: 'projects',
     component: ProjectsComponent
-  }
+  },
+  {
+    path: 'videoclone',
+    component: VideoCloneComponent
+  },
   ];
 
 @NgModule({

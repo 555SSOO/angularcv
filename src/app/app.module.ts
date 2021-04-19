@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {MatButtonModule, MatSidenavModule} from '@angular/material';
 import {FlexModule} from '@angular/flex-layout';
+import {CoreModule} from "./core/core.module";
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {FlexModule} from '@angular/flex-layout';
     NgbModule,
     MatSidenavModule,
     FlexModule,
-    MatButtonModule
+    MatButtonModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
