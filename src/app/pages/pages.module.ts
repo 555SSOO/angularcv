@@ -8,8 +8,9 @@ import { EducationComponent } from './education/education.component';
 import { ProjectsComponent } from './projects/projects.component';
 import {VideoCloneComponent} from './video-clone/video-clone.component';
 import {SharedModule} from '../shared/shared.module';
-import {MatGridListModule, MatListModule, MatProgressSpinnerModule} from '@angular/material';
-import {WebcamModule} from 'ngx-webcam'
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatListModule} from '@angular/material/list';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -26,8 +27,7 @@ import {WebcamModule} from 'ngx-webcam'
     SharedModule,
     MatGridListModule,
     MatListModule,
-    MatProgressSpinnerModule,
-    WebcamModule
+    MatProgressSpinnerModule
   ]
 })
 export class PagesModule { }

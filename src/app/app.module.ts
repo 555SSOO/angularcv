@@ -7,7 +7,8 @@ import {PagesModule} from './pages/pages.module';
 import {SharedModule} from './shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import {MatButtonModule, MatSidenavModule} from '@angular/material';
+import {MatButtonModule} from '@angular/material/button';
+import {MatSidenavModule} from '@angular/material/sidenav';
 import {FlexModule} from '@angular/flex-layout';
 import {CoreModule} from "./core/core.module";
 

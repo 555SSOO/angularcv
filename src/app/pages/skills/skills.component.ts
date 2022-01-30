@@ -1,7 +1,8 @@
 import {Component, HostListener, OnInit} from '@angular/core';
 import {CvItem} from '../../core/models/cv-item.model';
 import {SkillsItems} from '../../core/content/skills-items';
-import {ProgressSpinnerMode, ThemePalette} from '@angular/material';
+// import {ThemePalette} from '@angular/material/';
+// import {ProgressSpinnerMode} from '@angular/material/progress-spinner';
 
 @Component({
   selector: 'app-skills',
